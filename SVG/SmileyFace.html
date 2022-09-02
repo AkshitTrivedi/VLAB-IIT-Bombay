@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linear & Radial Gradient</title>
+	<!--<link rel="stylesheet" href="smileyface.css">-->
+	<style>
+		.face:hover .eye
+		{
+		  ry:0;
+		}
+
+		.face:hover .white
+		{
+		  ry:0;
+		}
+
+		.eye
+		{
+		  ry:15;
+		  transition: ry 0.5s ease;
+		}
+
+		.white
+		{
+			ry:5;
+		  transition: ry 0.5s ease;
+		}
+	</style>
+  </head>
+  <body>
+<svg class="smiley" width="500" height="500" >
+  <!-- Points -->
+  <!-- Face -->
+  <g class="face">
+  <circle class="face" cx="100" cy="100" r="90" fill="yellow" stroke="black" stroke-width="3"/>
+  <!-- Left Eye  -->
+  <g class="eyes">
+    <ellipse class="eye" cx="65" cy="70" rx="15" />
+      <ellipse class="white" cx="70" cy="75" rx="5" fill="white"/>
+  
+  <!-- Right Eye -->
+  <ellipse class="eye" cx="136" cy="70" rx="15" />
+    
+  <ellipse class="white" cx="131" cy="75" rx="5" fill="white"/>
+ </g>
+  
+  <!-- <path d="M 60 120 C 50 160, 150 160, 140 120" stroke="black" fill="transparent"/> -->
+  <path d="M 48 130 C 60 160, 120 180, 153 130" stroke="black" fill="transparent" stroke-width="3"/>
+  </g>
+</svg>
+</body>
+</html>
